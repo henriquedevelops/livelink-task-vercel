@@ -22,9 +22,10 @@ const CreatorCard: FC<Props> = ({
   const [height, setHeight] = useState<number | 'auto'>(0)
 
   return (
-    <div
+    <article
       className={styles.creatorCard}
       onClick={() => setHeight(height === 0 ? 'auto' : 0)}
+      role="button"
     >
       <img className={styles.image} src={imageSrc} alt={imageAlt} />
       <div>
@@ -32,7 +33,7 @@ const CreatorCard: FC<Props> = ({
         <p className={styles.textTitle}>{textTitle}</p>
         <AnimateHeight height={height}>{text}</AnimateHeight>
       </div>
-    </div>
+    </article>
   )
 }
 

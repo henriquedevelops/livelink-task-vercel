@@ -8,6 +8,8 @@ const LogoSVG: FC = () => {
       className={styles.logoSVG}
       viewBox="0 0 112.998 40.782"
     >
+      <title>LiveLink Logo</title>
+      <desc>LiveLink company logo.</desc>
       <g
         id="Group_5869"
         data-name="Group 5869"
